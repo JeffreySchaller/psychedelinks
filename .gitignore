@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# iCloud
+*.icloud
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Netlify
+.netlify/
+
+# Node (only if a build step is added later)
+node_modules/
