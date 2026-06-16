@@ -131,7 +131,9 @@ canvas#net{position:absolute;inset:0;width:100%;height:100%;display:block}
 .prod-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .card{transition:transform .4s var(--ease)}
 .card:hover{transform:translateY(-6px)}
-.card .thumb{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--paper-2);display:flex;align-items:center;justify-content:center;position:relative}
+.card .thumb{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;position:relative}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+.card:hover .thumb img{transform:scale(1.04)}
 .card .thumb .ph{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint)}
 .card .name{margin-top:16px;font-weight:500;font-size:15px}
 .card .price{color:var(--ink-soft);font-size:14px;margin-top:3px}
@@ -151,8 +153,8 @@ body.shop a{color:var(--dark-text)}
 .filters button:hover{color:var(--dark-text);border-color:var(--dark-text-soft)}
 .filters button.active{background:var(--dark-text);color:var(--dark);border-color:var(--dark-text)}
 .shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
-.shop-grid .card .thumb{background:var(--dark-2)}
-.shop-grid .card .thumb .ph{color:var(--dark-text-soft)}
+.shop-grid .card .thumb{background:#fff}
+.shop-grid .card .thumb .ph{color:var(--ink-faint)}
 .shop-grid .card .name{color:var(--dark-text)}
 .shop-grid .card .price{color:var(--dark-text-soft)}
 .shop-grid .card.hide{display:none}
